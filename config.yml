@@ -20,11 +20,11 @@ lavalink:
   retryDelay: 3000                # Reduced from 5000 to 3000 for faster reconnection
   retryMax: 15                    # Increased from 10 to 15 for more resilient reconnection
   nodes:
-    - name: "Node-1"
-      host: "localhost"
+    - name: "My-Node"
+      host: "YOUR_LAVALINK_HOST"
+      port: YOUR_PORT
+      password: "YOUR_PASSWORD"
       secure: false
-      port: 8080
-      password: "PASSWORD"
     
 spotify:
   clientId: "CLIENT_ID"
