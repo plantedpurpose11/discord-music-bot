@@ -1,0 +1,67 @@
+# ═══════════════════════════════════════════════════════════════════════════
+# 🎵 QUEUE EMBED - Displays the current music queue
+# ═══════════════════════════════════════════════════════════════════════════
+# 
+# AVAILABLE PLACEHOLDERS:
+# ─────────────────────────────────────────────────────────────────────────────
+# 
+# 📦 QUEUE DATA:
+#   {queue_lines}         - Formatted list of upcoming songs (auto-generated)
+#   {queue_length}        - Total number of songs in queue (e.g., "15")
+#   {now_playing_count}   - 1 if playing, 0 if idle
+#
+# 🎧 CURRENT TRACK:
+#   {song}                - Current song title
+#   {url}                 - Current song URL
+#   {author}              - Artist/uploader name
+#   {duration}            - Total song length (e.g., "3:45")
+#   {position}            - Current playback position (e.g., "1:23")
+#   {song_thumbnail}      - URL to song artwork/thumbnail
+#
+# 🎛️ PLAYER STATE:
+#   {loop_mode}           - Current loop mode: "off", "track", or "queue"
+#   {volume}              - Current volume level (0-200)
+#   {total_playing}       - Total players active across all servers
+#
+# 👤 USER & SERVER:
+#   {username}            - User who ran the command
+#   {requester_avatar}    - Avatar URL of requester
+#   {guild_name}          - Server name
+#   {guild_id}            - Server ID
+#   {voice_channel}       - Voice channel name
+#
+# 🤖 BOT INFO:
+#   {bot_name}            - Bot's display name
+#   {bot_avatar}          - Bot's avatar URL
+#
+# 📊 GLOBAL STATS:
+#   {total_guilds}        - Total servers the bot is in
+#   {total_users}         - Total cached users
+#
+# ═══════════════════════════════════════════════════════════════════════════
+
+title: "📋 Queue — {guild_name}"
+description: |
+  **🎵 Now Playing:** [{song}]({url})
+  **🎤 Artist:** {author}
+  **⏱️ Duration:** {position} / {duration}
+  
+  ───────────────────────
+  **📜 Up Next ({queue_length} songs):**
+  {queue_lines}
+  ───────────────────────
+  
+  🔁 **Loop:** `{loop_mode}` • 🔊 **Volume:** `{volume}%`
+
+footer:
+  text: "🎶 Requested by {username} • Use /skip to skip"
+  icon: "{requester_avatar}"
+
+author:
+  name: "🎧 {bot_name} Music Player"
+  icon: "{bot_avatar}"
+
+thumbnail: "{song_thumbnail}"
+image: ""
+color: "#5865F2"
+timestamp: true

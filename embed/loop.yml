@@ -1,0 +1,48 @@
+# ═══════════════════════════════════════════════════════════════════════════
+# 🔁 LOOP EMBED - Shown when loop mode is changed
+# ═══════════════════════════════════════════════════════════════════════════
+# 
+# AVAILABLE PLACEHOLDERS:
+# ─────────────────────────────────────────────────────────────────────────────
+# 
+# 🔁 LOOP DATA:
+#   {loop_mode}           - Current loop mode: "off", "track", or "queue"
+#
+# 🎵 CURRENT TRACK:
+#   {song}                - Current song title
+#   {url}                 - Current song URL
+#   {author}              - Artist/uploader name
+#
+# 📦 QUEUE INFO:
+#   {queue_length}        - Total songs in queue
+#
+# 👤 USER & SERVER:
+#   {username}            - User who changed the loop mode
+#   {requester_avatar}    - Avatar of the user
+#   {guild_name}          - Server name
+#
+# 🤖 BOT INFO:
+#   {bot_name}            - Bot's display name
+#   {bot_avatar}          - Bot's avatar URL
+#
+# ═══════════════════════════════════════════════════════════════════════════
+
+title: "🔁 Loop Mode Updated"
+description: |
+  **Mode:** `{loop_mode}`
+  
+  🎵 **Now Playing:** [{song}]({url})
+  📋 **Queue Length:** {queue_length} songs
+
+footer:
+  text: "Changed by {actionby_username}"
+  icon: "{requester_avatar}"
+
+author:
+  name: "{bot_name}"
+  icon: "{bot_avatar}"
+
+thumbnail: ""
+image: ""
+color: "#5865F2"
+timestamp: true

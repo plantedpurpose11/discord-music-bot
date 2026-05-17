@@ -1,0 +1,12 @@
+title: "Stopped"
+description: "{actionby_username} stopped playback and cleared the queue."
+footer:
+  text: "{guild_name}"
+  icon: "{bot_avatar}"
+author:
+  name: "{bot_name}"
+  icon: "{bot_avatar}"
+thumbnail: ""
+image: ""
+color: "#ED4245"
+timestamp: true

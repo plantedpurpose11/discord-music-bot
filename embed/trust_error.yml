@@ -1,0 +1,10 @@
+title: "🛡️ Trusted Listener Required"
+description: "To prevent abuse, specialized commands like **{command}** are restricted to long-term listeners.\n\n⏳ **Remaining Time:** {time_remaining}\n\n📍 *You must remain in the voice channel to build trust. If you leave, your timer will reset.*"
+color: "#FFD700"
+author:
+  name: "{bot_name}"
+  icon: "{bot_avatar}"
+footer:
+  text: "Trust System • Musify Security"
+  icon: "{bot_avatar}"
+timestamp: true

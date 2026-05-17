@@ -1,0 +1,12 @@
+title: "Node Shifted"
+description: "Successfully shifted the player to a new Lavalink node.\n\n📡 **New Node:** `{newNodeName}`"
+footer:
+  text: "{guild_name}"
+  icon: "{bot_avatar}"
+author:
+  name: "{bot_name}"
+  icon: "{bot_avatar}"
+thumbnail: ""
+image: ""
+color: "#57F287"
+timestamp: true

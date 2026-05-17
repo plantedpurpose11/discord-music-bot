@@ -1,0 +1,55 @@
+# ═══════════════════════════════════════════════════════════════════════════
+# 🎶 NOW PLAYING CMD EMBED - Shown as response to /np or @bot np command
+# ═══════════════════════════════════════════════════════════════════════════
+# 
+# AVAILABLE PLACEHOLDERS:
+# ─────────────────────────────────────────────────────────────────────────────
+# 
+# 🎵 CURRENT TRACK:
+#   {song}                - Current song title
+#   {url}                 - Current song URL
+#   {author}              - Artist/uploader name
+#   {duration}            - Total song length (e.g., "3:45")
+#   {position}            - Current playback position (e.g., "1:23")
+#   {song_thumbnail}      - URL to song artwork
+#
+# 🎛️ PLAYER STATE:
+#   {loop_mode}           - Current loop mode: "off", "track", or "queue"
+#   {volume}              - Current volume level (0-200)
+#
+# 📦 QUEUE INFO:
+#   {queue_length}        - Songs remaining in queue
+#
+# 👤 USER & SERVER:
+#   {username}            - Original requester of the song
+#   {requester_avatar}    - Avatar of the requester
+#   {guild_name}          - Server name
+#
+# 🤖 BOT INFO:
+#   {bot_name}            - Bot's display name
+#   {bot_avatar}          - Bot's avatar URL
+#
+# ═══════════════════════════════════════════════════════════════════════════
+
+title: "🎶 Now Playing"
+description: |
+  **[{song}]({url})**
+  🎤 **Artist:** {author}
+  
+  ⏱️ **Progress:** `{position}` / `{duration}`
+  📋 **Queue:** {queue_length} songs remaining
+  
+  🔁 **Loop:** `{loop_mode}` • 🔊 **Volume:** `{volume}%`
+
+footer:
+  text: "Requested by {username}"
+  icon: "{requester_avatar}"
+
+author:
+  name: "{bot_name} • Music"
+  icon: "{bot_avatar}"
+
+thumbnail: "{song_thumbnail}"
+image: ""
+color: "#5865F2"
+timestamp: true

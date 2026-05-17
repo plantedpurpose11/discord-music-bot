@@ -1,0 +1,12 @@
+title: "Resumed"
+description: "Playback has been resumed by {actionby_username}."
+footer:
+  text: "{guild_name}"
+  icon: "{bot_avatar}"
+author:
+  name: "{bot_name}"
+  icon: "{bot_avatar}"
+thumbnail: ""
+image: ""
+color: "#57F287"
+timestamp: true

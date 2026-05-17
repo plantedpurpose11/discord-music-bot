@@ -1,0 +1,12 @@
+title: "Current Volume"
+description: "Current volume is **{volume}**.\nUse /volume value:<0-200> to set."
+footer:
+  text: "{guild_name}"
+  icon: "{bot_avatar}"
+author:
+  name: "{bot_name}"
+  icon: "{bot_avatar}"
+thumbnail: ""
+image: ""
+color: "#5865F2"
+timestamp: true

@@ -1,0 +1,53 @@
+This file lists all supported placeholders you can use in the embed YAML files.
+Leave fields empty (e.g., thumbnail: "") in templates to disable that section.
+
+General Music
+- {song}                  -> Current track title
+- {url}                   -> Current track URL
+- {author}                -> Track author/artist/channel
+- {duration}              -> Track total duration (hh:mm:ss or mm:ss)
+- {position}              -> Current playback position (hh:mm:ss or mm:ss)
+- {queue_length}          -> Number of tracks in queue (not counting current)
+- {total_playing}         -> Number of guilds currently playing a track
+- {guild_name}            -> Name of the Discord server
+- {guild_id}              -> ID of the Discord server
+- {voice_channel}         -> Name of the voice channel (if available)
+- {user}                  -> Display name of the acting user/requester
+- {username}              -> Username/tag of the acting user/requester
+- {requester_avatar}      -> Avatar URL of the acting user/requester
+
+Queue & Stats
+- {total_guilds}          -> Total number of guilds the bot is in
+- {total_users}           -> Total number of users cached by the bot
+- {total_tracks_played}   -> (Reserved) Total tracks played counter (if implemented)
+- {loop_mode}             -> Loop mode: off | track | queue
+- {volume}                -> Current volume value
+- {shuffle}               -> Shuffle state (on/off)
+- {now_playing_count}     -> 1 if a track is currently playing, else 0
+- {playlist_length}       -> Playlist length for playlist actions (if provided)
+- {song_thumbnail}        -> Thumbnail URL for the song (if available)
+- {bot_name}              -> Bot username
+- {bot_avatar}            -> Bot avatar URL
+
+Command-Specific Extras
+- {queue_lines}           -> Pre-rendered queue lines used by queue.yml
+- {nodes_lines}           -> Pre-rendered Lavalink nodes lines used by node_stats.yml
+- {lyrics}                -> Lyrics text used by lyrics.yml
+- {error_message}         -> Error text used by error.yml
+
+Playlists
+- {playlist_name}         -> Name of the playlist
+- {total_playlists}       -> Number of playlists the user owns
+- {max_playlists}         -> Maximum allowed playlists per user (from config)
+- {total_songs}           -> Number of songs in the playlist (or added during play)
+- {max_songs}             -> Maximum allowed songs per playlist (from config)
+- {song_title}            -> Title of the song added/removed
+- {song_url}              -> URL of the song added/removed
+- {song_position}         -> 1-based position of the song in the playlist
+- {songs_list}            -> Pre-rendered list of songs (e.g., in playlist info)
+- {total_duration}        -> Total duration of the playlist (formatted)
+
+Notes
+- Not all placeholders are meaningful for every embed; unused ones will just render as empty.
+- You can safely include multi-line text in description fields.
+- Colors accept HEX (e.g., #5865F2). Set timestamp: true/false to toggle timestamps.

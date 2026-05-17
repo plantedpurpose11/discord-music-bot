@@ -1,0 +1,167 @@
+create_success:
+  title: "Playlist Created"
+  description: "{user} created playlist **{playlist_name}** ({total_playlists}/{max_playlists})."
+  footer:
+    text: "{guild_name}"
+    icon: "{bot_avatar}"
+  author:
+    name: "{bot_name}"
+    icon: "{bot_avatar}"
+  thumbnail: ""
+  image: ""
+  color: "#57F287"
+  timestamp: true
+
+create_fail:
+  title: "Cannot Create Playlist"
+  description: "{user}, you already have **{total_playlists}** playlists (max {max_playlists})."
+  footer:
+    text: "{guild_name}"
+    icon: "{bot_avatar}"
+  author:
+    name: "{bot_name}"
+    icon: "{bot_avatar}"
+  thumbnail: ""
+  image: ""
+  color: "#ED4245"
+  timestamp: true
+
+delete_success:
+  title: "Playlist Deleted"
+  description: "Deleted **{playlist_name}**."
+  footer:
+    text: "{guild_name}"
+    icon: "{bot_avatar}"
+  author:
+    name: "{bot_name}"
+    icon: "{bot_avatar}"
+  thumbnail: ""
+  image: ""
+  color: "#ED4245"
+  timestamp: true
+
+delete_fail:
+  title: "Delete Failed"
+  description: "Playlist **{playlist_name}** not found."
+  footer:
+    text: "{guild_name}"
+    icon: "{bot_avatar}"
+  author:
+    name: "{bot_name}"
+    icon: "{bot_avatar}"
+  thumbnail: ""
+  image: ""
+  color: "#ED4245"
+  timestamp: true
+
+add_success:
+  title: "Added to Playlist"
+  description: "[{song_title}]({song_url}) added to **{playlist_name}** at position {song_position} ({total_songs}/{max_songs})."
+  footer:
+    text: "{guild_name}"
+    icon: "{bot_avatar}"
+  author:
+    name: "{bot_name}"
+    icon: "{bot_avatar}"
+  thumbnail: "{song_thumbnail}"
+  image: ""
+  color: "#57F287"
+  timestamp: true
+
+add_fail:
+  title: "Add Failed"
+  description: "{reason}"
+  footer:
+    text: "{guild_name}"
+    icon: "{bot_avatar}"
+  author:
+    name: "{bot_name}"
+    icon: "{bot_avatar}"
+  thumbnail: ""
+  image: ""
+  color: "#ED4245"
+  timestamp: true
+
+remove_success:
+  title: "Removed from Playlist"
+  description: "Removed #{song_position}: {song_title} from **{playlist_name}**."
+  footer:
+    text: "{guild_name}"
+    icon: "{bot_avatar}"
+  author:
+    name: "{bot_name}"
+    icon: "{bot_avatar}"
+  thumbnail: ""
+  image: ""
+  color: "#ED4245"
+  timestamp: true
+
+remove_fail:
+  title: "Remove Failed"
+  description: "Invalid index or playlist: **{playlist_name}**."
+  footer:
+    text: "{guild_name}"
+    icon: "{bot_avatar}"
+  author:
+    name: "{bot_name}"
+    icon: "{bot_avatar}"
+  thumbnail: ""
+  image: ""
+  color: "#ED4245"
+  timestamp: true
+
+list:
+  title: "Your Playlists"
+  description: "{playlists}\n\nTotal: {total_playlists}/{max_playlists}"
+  footer:
+    text: "{guild_name}"
+    icon: "{bot_avatar}"
+  author:
+    name: "{bot_name}"
+    icon: "{bot_avatar}"
+  thumbnail: ""
+  image: ""
+  color: "#5865F2"
+  timestamp: true
+
+info:
+  title: "Playlist: {playlist_name}"
+  description: "Songs: {total_songs}\nTotal Duration: {total_duration}\n\n{songs_list}"
+  footer:
+    text: "{guild_name}"
+    icon: "{bot_avatar}"
+  author:
+    name: "{bot_name}"
+    icon: "{bot_avatar}"
+  thumbnail: ""
+  image: ""
+  color: "#5865F2"
+  timestamp: true
+
+play_start:
+  title: "Adding Playlist"
+  description: "Adding **{total_songs}** songs from **{playlist_name}** to the queue..."
+  footer:
+    text: "{guild_name}"
+    icon: "{bot_avatar}"
+  author:
+    name: "{bot_name}"
+    icon: "{bot_avatar}"
+  thumbnail: ""
+  image: ""
+  color: "#5865F2"
+  timestamp: true
+
+play_done:
+  title: "Playlist Queued"
+  description: "Added **{total_songs}** songs from **{playlist_name}**. Queue length: {queue_length}."
+  footer:
+    text: "{guild_name}"
+    icon: "{bot_avatar}"
+  author:
+    name: "{bot_name}"
+    icon: "{bot_avatar}"
+  thumbnail: ""
+  image: ""
+  color: "#57F287"
+  timestamp: true

@@ -1,0 +1,12 @@
+title: "Error"
+description: "{error_message}"
+footer:
+  text: "{guild_name}"
+  icon: "{bot_avatar}"
+author:
+  name: "{bot_name}"
+  icon: "{bot_avatar}"
+thumbnail: ""
+image: ""
+color: "#ED4245"
+timestamp: true

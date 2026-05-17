@@ -1,0 +1,12 @@
+title: "Queue Shuffled"
+description: "{actionby_username} shuffled the queue."
+footer:
+  text: "{guild_name}"
+  icon: "{bot_avatar}"
+author:
+  name: "{bot_name}"
+  icon: "{bot_avatar}"
+thumbnail: ""
+image: ""
+color: "#5865F2"
+timestamp: true

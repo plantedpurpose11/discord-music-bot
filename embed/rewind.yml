@@ -1,0 +1,50 @@
+# ═══════════════════════════════════════════════════════════════════════════
+# ⏪ REWIND EMBED - Shown when rewinding the current track
+# ═══════════════════════════════════════════════════════════════════════════
+# 
+# AVAILABLE PLACEHOLDERS:
+# ─────────────────────────────────────────────────────────────────────────────
+# 
+# ⏪ REWIND DATA:
+#   {seconds}             - Number of seconds rewound (e.g., "10")
+#   {position}            - New playback position after rewind (e.g., "1:23")
+#
+# 🎵 CURRENT TRACK:
+#   {song}                - Current song title
+#   {url}                 - Current song URL
+#   {author}              - Artist/uploader name
+#   {duration}            - Total song length (e.g., "3:45")
+#   {song_thumbnail}      - URL to song artwork
+#
+# 👤 USER & SERVER:
+#   {username}            - User who ran the command
+#   {actionby_username}   - User who performed the action
+#   {requester_avatar}    - Avatar of the user
+#   {guild_name}          - Server name
+#
+# 🤖 BOT INFO:
+#   {bot_name}            - Bot's display name
+#   {bot_avatar}          - Bot's avatar URL
+#
+# ═══════════════════════════════════════════════════════════════════════════
+
+title: "⏪ Rewound"
+description: |
+  **Track:** [{song}]({url})
+  **Artist:** {author}
+  
+  ⏪ Jumped back **{seconds}s**
+  📍 Now at **{position}** / {duration}
+
+footer:
+  text: "Rewound by {actionby_username}"
+  icon: "{requester_avatar}"
+
+author:
+  name: "{bot_name}"
+  icon: "{bot_avatar}"
+
+thumbnail: "{song_thumbnail}"
+image: ""
+color: "#5865F2"
+timestamp: true

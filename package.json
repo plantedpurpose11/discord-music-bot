@@ -1,0 +1,29 @@
+{
+  "name": "musify",
+  "description": "High-performance Lavalink v4 Discord Music Bot with enterprise-grade features.",
+  "version": "1.0.4",
+  "private": true,
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/sharder.js",
+    "dev": "node --watch src/sharder.js",
+    "register": "node scripts/register-commands.js"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "dependencies": {
+    "@discordjs/rest": "^2.4.0",
+    "better-sqlite3": "^9.4.5",
+    "chalk": "^5.3.0",
+    "discord-api-types": "^0.37.83",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^9.1.5",
+    "undici": "^6.19.8",
+    "ws": "^8.18.0",
+    "yaml": "^2.6.0"
+  }
+}

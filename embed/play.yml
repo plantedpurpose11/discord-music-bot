@@ -1,0 +1,53 @@
+# ═══════════════════════════════════════════════════════════════════════════
+# ▶️ PLAY EMBED - Shown when a song starts playing immediately
+# ═══════════════════════════════════════════════════════════════════════════
+# 
+# AVAILABLE PLACEHOLDERS:
+# ─────────────────────────────────────────────────────────────────────────────
+# 
+# 🎵 NOW PLAYING TRACK:
+#   {song}                - Title of the song now playing
+#   {url}                 - URL of the song
+#   {author}              - Artist/uploader name
+#   {duration}            - Song length (e.g., "3:45")
+#   {song_thumbnail}      - URL to song artwork
+#
+# 📦 QUEUE INFO:
+#   {queue_length}        - Total songs in queue (after this one)
+#
+# 🎛️ PLAYER STATE:
+#   {volume}              - Current volume level
+#   {loop_mode}           - Current loop mode
+#
+# 👤 USER & SERVER:
+#   {username}            - User who requested the song
+#   {requester_avatar}    - Avatar of the requester
+#   {guild_name}          - Server name
+#
+# 🤖 BOT INFO:
+#   {bot_name}            - Bot's display name
+#   {bot_avatar}          - Bot's avatar URL
+#
+# ═══════════════════════════════════════════════════════════════════════════
+
+title: "▶️ Now Playing"
+description: |
+  🎵 **[{song}]({url})**
+  🎤 **Artist:** {author}
+  ⏱️ **Duration:** {duration}
+  
+  📋 **Up Next:** {queue_length} songs in queue
+  🔊 **Volume:** {volume}%
+
+footer:
+  text: "Requested by {username}"
+  icon: "{requester_avatar}"
+
+author:
+  name: "{bot_name}"
+  icon: "{bot_avatar}"
+
+thumbnail: "{song_thumbnail}"
+image: ""
+color: "#57F287"
+timestamp: true

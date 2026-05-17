@@ -1,0 +1,38 @@
+bot:
+  prefix: "."                  # Unique command prefix
+  licenseKey: ""               # Bot license key for premium features
+  embedColor: "#5865F2"
+  voiceTimeoutMs: 1000           # Increased from 1s to 10s for more stable connections
+  voiceDataRetries: 20           # Increased from 4 to 20 retries for better voice sync
+  bufferDurationMs: 5000         # Buffer 5s of audio to prevent mid-song interruptions
+
+database:
+  mongodb:
+    uri: "MONGO_DB_URI"  # Or use MongoDB Atlas: mongodb+srv://user:pass@cluster.mongodb.net/musify
+    dbName: "musify"
+
+webhooks:
+  errors: "https://discord.com/api/webhooks/...."
+
+lavalink:
+  resumeKey: "FizzyStudio"
+  resumeTimeout: 180              # Increased from 60s to 180s for better session recovery
+  retryDelay: 3000                # Reduced from 5000 to 3000 for faster reconnection
+  retryMax: 15                    # Increased from 10 to 15 for more resilient reconnection
+  nodes:
+    - name: "Node-1"
+      host: "localhost"
+      secure: false
+      port: 8080
+      password: "PASSWORD"
+    
+spotify:
+  clientId: "CLIENT_ID"
+  clientSecret: "CLIENT_SECRET"
+
+sharding:
+  enabled: false
+  totalShards: 1
+  respawn: true
+  mode: process
+  # shardList: [0,1,2]

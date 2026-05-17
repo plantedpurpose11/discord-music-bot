@@ -1,0 +1,18 @@
+title: "🎶 Now Playing — Idle"
+description: |
+  >>> 🎧 **Music is idle in this channel.**
+
+  **How to use this music channel:**
+  • Type any song name, YouTube link, or playlist URL in this channel to add it to the queue
+  • When a song is playing, use the buttons below to pause, skip, stop, change volume, autoplay and loop
+  • Stay in this channel to see the current song, queue, and controls
+color: "#FF0000"
+thumbnail: "{bot_avatar}"
+image: "https://i.postimg.cc/4yFC2tXy/music-banner.png"
+footer:
+  text: "Use /play to start music"
+  icon: "{bot_avatar}"
+author:
+  name: "{bot_name} • Music System"
+  icon: "{bot_avatar}"
+timestamp: true

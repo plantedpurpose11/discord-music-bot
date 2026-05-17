@@ -1,0 +1,10 @@
+title: "🔇 Voice Channel Required"
+description: "You must be in the same voice channel as **{bot_name}** to use this command.\n\n📍 **Current Channel:** {voice_channel}"
+color: "#FF4B4B"
+author:
+  name: "{bot_name}"
+  icon: "{bot_avatar}"
+footer:
+  text: "Musify Music System"
+  icon: "{bot_avatar}"
+timestamp: true

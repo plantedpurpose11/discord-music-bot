@@ -1,0 +1,49 @@
+# ═══════════════════════════════════════════════════════════════════════════
+# ➕ PLAY QUEUED EMBED - Shown when a song is added to the queue
+# ═══════════════════════════════════════════════════════════════════════════
+# 
+# AVAILABLE PLACEHOLDERS:
+# ─────────────────────────────────────────────────────────────────────────────
+# 
+# 🎵 QUEUED TRACK:
+#   {song}                - Title of the queued song
+#   {url}                 - URL of the song
+#   {author}              - Artist/uploader name
+#   {duration}            - Song length (e.g., "3:45")
+#   {song_thumbnail}      - URL to song artwork
+#
+# 📦 QUEUE INFO:
+#   {queue_length}        - Total songs in queue after adding
+#   {queue_position}      - Position in queue (if available)
+#
+# 👤 USER & SERVER:
+#   {username}            - User who added the song
+#   {requester_avatar}    - Avatar of the requester
+#   {guild_name}          - Server name
+#
+# 🤖 BOT INFO:
+#   {bot_name}            - Bot's display name
+#   {bot_avatar}          - Bot's avatar URL
+#
+# ═══════════════════════════════════════════════════════════════════════════
+
+title: "➕ Added to Queue"
+description: |
+  🎵 **[{song}]({url})**
+  🎤 **Artist:** {author}
+  ⏱️ **Duration:** {duration}
+  
+  📋 **Position in Queue:** #{queue_length}
+
+footer:
+  text: "Requested by {username}"
+  icon: "{requester_avatar}"
+
+author:
+  name: "{bot_name}"
+  icon: "{bot_avatar}"
+
+thumbnail: "{song_thumbnail}"
+image: ""
+color: "#57F287"
+timestamp: true

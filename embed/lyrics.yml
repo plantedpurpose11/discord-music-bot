@@ -1,0 +1,12 @@
+title: "Lyrics: {song}"
+description: "{lyrics}"
+footer:
+  text: "Requested by {username}"
+  icon: "{requester_avatar}"
+author:
+  name: "{bot_name}"
+  icon: "{bot_avatar}"
+thumbnail: "{song_thumbnail}"
+image: ""
+color: "#5865F2"
+timestamp: true

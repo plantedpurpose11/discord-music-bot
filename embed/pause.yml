@@ -1,0 +1,12 @@
+title: "Paused"
+description: "Playback has been paused by {actionby_username}."
+footer:
+  text: "{guild_name}"
+  icon: "{bot_avatar}"
+author:
+  name: "{bot_name}"
+  icon: "{bot_avatar}"
+thumbnail: ""
+image: ""
+color: "#FFA500"
+timestamp: true
